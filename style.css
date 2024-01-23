@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+
+
+body{
+    background-color: #212325;
+    color: white;
+}
+
+main{
+    text-align: center;
+    border: 2px solid white;
+}
+
+h1{
+    font-family: 'Gochi Hand', cursive;
+}
+
+h1::selection{
+    background-color: white;
+    color: #212325;
+}
+
+#nagykep{
+    width: 1200px;
+    margin: auto;
+}
+
+#nagykep img{
+    width: 100%;
+}
+
+#kiskep{
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 10px;
+}
+
+#kiskep .kiskepek:hover{
+    border: 2px solid red;
+}
+
+#kiskep .kiskepek{
+    border: 2px solid white;
+    cursor: pointer;
+    width: 11.1%;
+    margin: 11px;
+    text-align: center;
+}
+
+
+#kiskep .kiskepek img{
+    width: 100%;
+    height: 100%;
+}
+
+#nagyPanel{
+    display: flex;
+    width: 1200px;
+}
+
+#nagyPanel button{
+    margin: auto;
+    width: 75px;
+    height: 50px;
+}
+
+#nagyPanel img{
+    width: 75%;
+    border: 2px solid white;
+}
+
+#nagyPanel img:hover{
+    width: 75%;
+    border: 2px solid red;
+}
