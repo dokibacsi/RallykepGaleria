@@ -6,8 +6,21 @@ class Controller{
     constructor(){
         const KEP = new Model();
         const KEPLISTA = KEP.getList()
-        new KisKepMegjelenito($("#kiskep"), KEPLISTA);
-        new NagyKepMegjelenito($("#nagykep"), KEP.getAktKep())
+        const KISKEP = new KisKepMegjelenito($("#kiskep"), KEPLISTA);
+        const NAGYKEP = new NagyKepMegjelenito($("#nagykep"), KEP.getAktKep())
+
+
+        $(window).on("kicsiNagyraCsere", (event) =>{
+            const eleresiUt = event.detail.eleresiUt;
+            NAGYKEP.nagyKepCsere(eleresiUt);
+        })
+
+        /* 
+        $(window).on("VisszaMegy", (event) => {
+            
+        }) 
+        
+        */
     }
 }
 

@@ -1,10 +1,10 @@
-import { RALLYAUTOK } from "./Rallyautok.js";
+import { FORD_PUMA_RALLY1 } from "./Rallyautok.js";
 
 class Model {
   #list = [];
   #id;
   constructor() {
-    this.#list = RALLYAUTOK;
+    this.#list = FORD_PUMA_RALLY1;
     this.#id = 0;
     this.listaHossz = this.#list.length
   }

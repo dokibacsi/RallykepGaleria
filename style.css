@@ -21,20 +21,15 @@ h1::selection{
 }
 
 #nagykep{
-    width: 1200px;
     margin: auto;
-}
-
-#nagykep img{
-    width: 100%;
 }
 
 #kiskep{
     display: flex;
     margin: auto;
     flex-wrap: wrap;
-    text-align: center;
     padding: 10px;
+    width: 100%;
 }
 
 #kiskep .kiskepek:hover{
@@ -49,6 +44,10 @@ h1::selection{
     text-align: center;
 }
 
+#nagyPanel img{
+    width: 900px;
+}
+
 
 #kiskep .kiskepek img{
     width: 100%;
@@ -56,8 +55,10 @@ h1::selection{
 }
 
 #nagyPanel{
-    display: flex;
-    width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 1100px;
 }
 
 #nagyPanel button{
@@ -67,11 +68,88 @@ h1::selection{
 }
 
 #nagyPanel img{
-    width: 75%;
     border: 2px solid white;
 }
 
-#nagyPanel img:hover{
-    width: 75%;
-    border: 2px solid red;
+@media screen and (max-width:1300px) {
+    #nagyPanel{
+        width: 900px;
+    }
+
+    #nagykep img{
+        width: 600px;
+    }
+
+    #nagykep{
+        width: 900px;
+    }
+    
+    #kiskep .kiskepek:hover{
+        border: 2px solid red;
+    }
+    
+    #kiskep .kiskepek{
+        border: 2px solid white;
+        cursor: pointer;
+        width: 31%
+    }
+}
+
+@media screen and (max-width:1000px) {
+
+    #nagyPanel{
+        width: 600px;
+    }
+
+    #nagykep img{
+        width: 400px;
+    }
+
+    #nagykep{
+        width: 500px;
+    }
+
+   
+
+}
+
+@media screen and (max-width:750px) {
+    #nagyPanel{
+        width: 500px;
+    }
+
+    #nagykep img{
+        width: 350px;
+    }
+
+    #nagykep{
+        width: 500px;
+    }
+
+    #kiskep .kiskepek{
+        border: 2px solid white;
+        cursor: pointer;
+        width: 48%
+    }
+}
+
+@media screen and (max-width:600px) {
+    #nagyPanel{
+        display: contents;
+        width: 400px;
+    }
+
+    #nagykep img{
+        width: 300px;
+    }
+
+    #nagykep{
+        width: 300px;
+    }
+
+    #kiskep .kiskepek{
+        border: 2px solid white;
+        cursor: pointer;
+        width: 100%
+    }
 }
